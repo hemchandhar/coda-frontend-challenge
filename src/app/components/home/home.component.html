@@ -1,0 +1,39 @@
+<div class="home">
+    <img src="../../../assets/Images/Illustration1.png" alt="" class="img1">
+    <img src="../../../assets/Images/Illustration2.png" alt="" class="img2">
+    <img src="../../../assets/Images/Illustration3.png" alt="" class="img3">
+    <img src="../../../assets/Images/Illustration4.png" alt="" class="img4">
+    <img src="../../../assets/Images/Illustration5.png" alt="" class="img5">
+    <div class="search">
+        <div class="icon">
+            <i class="fas fa-search"></i>
+        </div>
+        <input type="text" placeholder="Search your favourite recipe...">
+    </div>
+    <div class="cards">
+        <div class="category">
+            <h4>category</h4>
+            <h1>Pizza & Noodles</h1>
+        </div>
+        <div class="grid-system">
+            <div *ngFor="let recipe of recipes">
+                <div class="card-grid">
+                    <img src="{{recipe.image}}" alt="">
+                    <div class="content">
+                        <div class="name">
+                            <h2>{{recipe.name}}</h2>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="clock">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h4>{{recipe.price}}</h4>
+                        </div>
+                        <p>{{ recipe.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+</div>

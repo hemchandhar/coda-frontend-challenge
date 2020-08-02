@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Metropolis;
+    src: url(assets/Fonts/Metropolis/Metropolis-Black.otf) format("opentype");
+}
+
+
+@font-face {
+    font-family: Metropolis-light;
+    src: url(assets/Fonts/Metropolis/Metropolis-Light.otf) format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Metropolis,sans-serif;
+}
