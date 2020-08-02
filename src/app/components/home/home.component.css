@@ -112,7 +112,6 @@
 .home .cards .grid-system{
     margin: 40px;
     display: grid;
-    /* grid-template-rows: repeat(auto-fit,minmax(300px,1fr)); */
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     grid-row-gap: 18px;
     grid-column-gap: 20px;   
@@ -127,6 +126,11 @@
     border-radius: 20px;
     position: relative;
 }
+.home .cards .grid-system .card-grid:nth-child(odd){
+    width: 220px;
+    height: 350px;
+}
+
 .home .cards .grid-system .card-grid:hover{
     transform: scale(1.1);
 }
@@ -137,6 +141,16 @@
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+}
+.home .cards .grid-system .card-grid .tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000000a1;
+    padding: 8px;
+    border-radius: 0 20px 0px 20px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
 .home .cards .grid-system .card-grid .content{
     position: absolute;

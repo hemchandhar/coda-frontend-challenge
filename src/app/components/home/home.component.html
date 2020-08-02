@@ -16,20 +16,21 @@
             <h1>Pizza & Noodles</h1>
         </div>
         <div class="grid-system">
-            <div *ngFor="let recipe of recipes">
-                <div class="card-grid">
-                    <img src="{{recipe.image}}" alt="">
-                    <div class="content">
-                        <div class="name">
-                            <h2>{{recipe.name}}</h2>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="clock">
-                            <i class="fas fa-dollar-sign"></i>
-                            <h4>{{recipe.price}}</h4>
-                        </div>
-                        <p>{{ recipe.description}}</p>
+            <div class="card-grid" *ngFor="let recipe of recipes">
+                <div class="tag">
+                    {{recipe.category}}
+                </div>
+                <img src="{{recipe.image}}" alt="">
+                <div class="content">
+                    <div class="name">
+                        <h2>{{recipe.name}}</h2>
+                        <i class="far fa-heart"></i>
                     </div>
+                    <div class="clock">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h4>{{recipe.price}}</h4>
+                    </div>
+                    <p>{{ recipe.description}}</p>
                 </div>
             </div>
         </div>
